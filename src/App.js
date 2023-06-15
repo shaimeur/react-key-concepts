@@ -2,6 +2,9 @@ import keyConceptsImage from './assets/images/key-concepts.png';
 import componentsImage from './assets/images/components.png';
 import stateImage from './assets/images/state.png';
 import eventsImage from './assets/images/events.png';
+import MyCompoenent from './components/MyComponent';
+import MyEvent from './components/MyEvent';
+import MyState from './components/MyState';
 
 const concepts = [
   {
@@ -34,9 +37,9 @@ function App() {
       </header>
       <ul id="concepts">
         <li className="concept">
-          <img src="TODO: IMAGE" alt="TODO: TITLE" />
-          <h2>TODO: TITLE</h2>
-          <p>TODO: DESCRIPTION</p>
+          <MyCompoenent concepts= {concepts[0]} />
+          <MyState concepts = {concepts[1]}/>
+          <MyEvent concepts= {concepts[2]}/>
         </li>
       </ul>
     </div>
