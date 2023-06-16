@@ -2,11 +2,11 @@ const MyEvent = (props) =>{
     const { image, title, description } = props.concepts;
 
     return (
-        <div>
+        <li className="concept">
             <img src={image} alt={title}/>
             <h2>{title}</h2>
             <p>{description}</p>
-        </div>
+        </li>
     )
 }
 

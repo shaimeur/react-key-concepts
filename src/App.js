@@ -36,11 +36,11 @@ function App() {
         <p>Selected key React concepts you should know about</p>
       </header>
       <ul id="concepts">
-        <li className="concept">
+
           <MyCompoenent concepts= {concepts[0]} />
           <MyState concepts = {concepts[1]}/>
           <MyEvent concepts= {concepts[2]}/>
-        </li>
+
       </ul>
     </div>
   );
