@@ -1,10 +1,8 @@
 import componentsImage from './assets/images/components.png';
 import stateImage from './assets/images/state.png';
 import eventsImage from './assets/images/events.png';
-import MyCompoenent from './components/MyComponent';
-import MyEvent from './components/MyEvent';
-import MyState from './components/MyState';
-import MyHeader from './components/MyHeader';
+import MyHeader from './components/Header/MyHeader';
+import Concept from './components/concept/Concept'
 const concepts = [
   {
     title: 'Components',
@@ -32,9 +30,9 @@ function App() {
      <MyHeader/>
       <ul id="concepts">
 
-          <MyCompoenent concepts= {concepts[0]} />
-          <MyState concepts = {concepts[1]}/>
-          <MyEvent concepts= {concepts[2]}/>
+         <Concept image = {concepts[0].image} title = {concepts[0].title} description = {concepts[0].description}/>
+         <Concept image = {concepts[1].image} title = {concepts[1].title} description = {concepts[1].description}/>
+         <Concept image = {concepts[2].image} title = {concepts[2].title} description = {concepts[2].description}/>
 
       </ul>
     </div>
